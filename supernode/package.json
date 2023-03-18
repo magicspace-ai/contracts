@@ -1,0 +1,44 @@
+{
+  "name": "node-contract",
+  "version": "0.0.1",
+  "description": "Smart contract source codes for supernode staking",
+  "scripts": {
+    "deploy_bsc_testnet": "npx hardhat deploy --network bsc_testnet --reset",
+    "deploy_polygon_testnet": "npx hardhat deploy --network polygon_testnet --reset",
+    "deploy_avax_testnet": "npx hardhat deploy --network avax_testnet --reset",
+    "deploy_local": "npx hardhat clean && npx hardhat deploy --network localhost --reset",
+    "run_node": "npx hardhat node --no-deploy",
+    "abi": "npx hardhat export-abi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magicspace-ai/node-contract.git"
+  },
+  "keywords": [
+    "ai",
+    "supernode",
+    "decentralized",
+    "ethereum",
+    "blockchain",
+    "machine-learning",
+    "nlp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magicspace-ai/node-contract/issues"
+  },
+  "homepage": "https://github.com/magicspace-ai/node-contract#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.5",
+    "@openzeppelin/contracts": "^4.8.1",
+    "@openzeppelin/contracts-upgradeable": "^4.8.1",
+    "@openzeppelin/hardhat-upgrades": "^1.22.1",
+    "hardhat": "^2.12.7",
+    "hardhat-abi-exporter": "^2.10.1",
+    "hardhat-contract-sizer": "^2.8.0"
+  }
+}
